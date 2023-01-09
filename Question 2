@@ -1,0 +1,39 @@
+r1 = int(input("enter the num of row "))
+c1 = int(input("enter the num of column "))
+
+r2 = int(input("enter the num of row "))
+c2 = int(input("enter the num of column "))
+
+if (r1==r2) and (c1==c2):
+    mat1 = []
+    print("Enter ",r1*c1," elements for mat1: ")
+    for i in range (r1):
+        mat1.append([])
+        for j in range (c1):
+            n = int(input())
+            mat1[i].append(n)
+
+    mat2 = []
+    print("Enter ",r2*c2," elements for mat1: ")
+    for i in range (r2):
+        mat2.append([])
+        for j in range (c2):
+            n = int(input())
+            mat2[i].append(n)
+
+    mat3=[]
+    for i in range (r1):
+        mat3.append([])
+        for j in range (c2):
+            mat3[i].append(mat1[i][j]+mat2[i][j])
+       
+    
+    print("Addition matrix:")
+    for i in range (r1):
+        for j in range (c1):
+            print(mat3[i][j],end= " " )
+        print()
+else:
+    print("Dimension mismatched")
+        
+        
