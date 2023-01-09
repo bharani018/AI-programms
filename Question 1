@@ -1,0 +1,35 @@
+##Simple calculator
+a =int(input("enter a number"))
+b =int(input("Enter a number"))
+
+c =input("Enter your choice");
+
+if(c=="+"):
+    print("sum = ",a+b)
+    
+elif (c=="-"):
+    print("diff =",a-b)
+elif(c=="*"):
+    print("Mult =",a*b)
+elif(c=="/"):
+    print("Div = ",a/b)
+
+d = input("Do you want to continue:")
+while d=="Yes":
+    a =int(input("enter a number"))
+    b =int(input("Enter a number"))
+
+    c =input("Enter your choice");
+
+    if(c=="+"):
+        print("sum = ",a+b)
+        
+    elif (c=="-"):
+        print("diff =",a-b)
+    elif(c=="*"):
+        print("Mult =",a*b)
+    elif(c=="/"):
+        print("Div = ",a/b)
+    d = input("Do you want to continue:")
+    if d=="No":
+        break
